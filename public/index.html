@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up · Journey</title>
+  <meta name="viewport" content="width=400, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="centered-card">
+    <div class="header-art">
+      <a href="/" class="header-art">
+        <img src="/uploads/artwork.jpg" alt="" class="header-art" />
+      </a>
+    </div>
+    <div class="form-container">
+      <h1>Welcome to Legality,<br>A Document Analyzer Project by MGMU Students</h1>
+      <p class="subtitle">
+        Let's get Started!
+      </p>
+      <form id="signup-form" autocomplete="off">
+        <div class="avatar-block">
+          <div class="avatar-label">
+            <img src="avatar-placeholder.png" alt="Your avatar" id="avatarPreview" class="avatar-img"/>
+            <div>
+              <div class="avatar-text">Your avatar</div>
+              <div class="avatar-limit">PNG or JPG up to 10MB</div>
+            </div>
+          </div>
+          <label class="upload-btn">
+            <input type="file" id="avatarInput" accept="image/*" hidden />
+            <span>
+              <svg width="16" height="16" fill="none" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#fff" opacity="0"/><path d="M7 10.667L9 12.667L13 8.667M10 18.0007C5.582 18.0007 2 14.4187 2 10.0007C2 5.58268 5.582 2.00068 10 2.00068C14.418 2.00068 18 5.58268 18 10.0007C18 14.4187 14.418 18.0007 10 18.0007Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="5" y="5" width="10" height="10" rx="5" fill="#000" opacity="0.05"/></svg> 
+              Upload
+            </span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="displayName">Display name</label>
+          <input type="text" id="displayName" name="displayName" placeholder="@ username" required />
+        </div>
+        <button class="main-btn" type="submit">Create an account</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
